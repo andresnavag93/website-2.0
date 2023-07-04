@@ -1,20 +1,10 @@
-<h1 align="center">
-  Andres Navarro Portfolio
-</h1>
+# Technologies / Tools
 
-<p align="center">
-  <a href="https://andresnavag93.vercel.app/" target="_blank">
-    https://andresnavag93.vercel.app/
-  </a>
-</p>
+- React.Js
 
-### Technologies / Tools
+## System requirements
 
-- Reactt.Js
+- node 18.16.1
+- npm 9.5.1
 
-### System requirements
-
-- node ^v18.16.1
-- npm ^9.5.1
-
-#### Developed by: Andres Navarro
+## Developed by: Andres Navarro
