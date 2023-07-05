@@ -36,7 +36,6 @@ export const NavBar = () => {
   const onUpdateActiveLink = (value) => {
     setActiveLink(value)
   }
-  const expand = 'md'
 
   return (
     <Router>
@@ -53,7 +52,11 @@ export const NavBar = () => {
             <span className="navbar-toggler-icon"></span>
           </Navbar.Toggle>
           <Navbar.Offcanvas id="basic-navbar-nav">
-            <Offcanvas.Header closeButton className="custom-white">
+            <Offcanvas.Header
+              expanded={true}
+              closeButton
+              className="custom-white"
+            >
               <Offcanvas.Title id="basic-navbar-nav"></Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
