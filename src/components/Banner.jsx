@@ -72,10 +72,10 @@ export const Banner = () => {
               </h1>
               <p>
                 Software engineer with over 6 years of expertise, specializing
-                in frontend development. If you need assistance with any of
-                these technologies or if you're interested in working together
-                on an exciting project, feel free to reach out. I'd be delighted
-                to help you out!
+                in frontend development. If you need assistance in modern
+                technologies or if you're interested in working together on an
+                exciting project, feel free to reach out. I'd be delighted to
+                help you out!
               </p>
             </div>
           </Col>
