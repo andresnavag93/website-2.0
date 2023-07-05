@@ -31,9 +31,14 @@ body {
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
-  background-color: #121212 !important;
+  background-color: rgba(0, 0, 0, 1) !important;
   color: #fff !important;
   font-family: 'Centra', sans-serif !important;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 40%,
+    rgba(6, 6, 145, 1) 100%
+  );
 }
 
 h1,
@@ -255,25 +260,13 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
-  background-image: url('./assets/img/banner-bg.png');
-  background-position: top center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.banner .tagline {
-  font-weight: 700;
-  letter-spacing: 0.8px;
-  padding: 8px 10px;
   background: linear-gradient(
-    90.21deg,
-    rgba(170, 54, 124, 0.5) -5.91%,
-    rgba(74, 47, 189, 0.5) 111.58%
+    90deg,
+    rgba(0, 0, 0, 1) 40%,
+    rgba(6, 6, 145, 1) 100%
   );
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  font-size: 20px;
-  margin-bottom: 16px;
-  display: inline-block;
 }
+
 .banner h1 {
   font-size: 65px;
   font-weight: 700;
@@ -329,6 +322,11 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 .skill {
   padding: 0 0 50px 0;
   position: relative;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 40%,
+    rgba(6, 6, 145, 1) 100%
+  );
 }
 .skill-bx {
   background: #151515;
@@ -369,7 +367,11 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 .project {
   padding: 80px 0;
   position: relative;
-  background-color: black;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 40%,
+    rgba(6, 6, 145, 1) 100%
+  );
 }
 .project h2 {
   font-size: 45px;
@@ -414,7 +416,11 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   position: absolute;
   width: 0;
   height: 100%;
-  background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 40%,
+    rgba(6, 6, 145, 1) 100%
+  );
   top: 0;
   left: 0;
   z-index: -1;
@@ -446,7 +452,11 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 }
 .proj-imgbx::before {
   content: '';
-  background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
+  background: radial-gradient(
+    circle,
+    rgba(6, 6, 145, 1) 13%,
+    rgba(0, 0, 0, 1) 68%
+  );
   opacity: 0.85;
   position: absolute;
   width: 100%;
@@ -493,7 +503,11 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 
 /************ Projects Css ************/
 .contact {
-  background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
+  background: radial-gradient(
+    circle,
+    rgba(6, 6, 145, 1) 13%,
+    rgba(23, 4, 8, 1) 68%
+  );
   padding: 60px 0 200px 0;
 }
 .contact img {
@@ -571,10 +585,11 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 .footer {
   /* margin-top: 10px; */
   padding: 50px 0;
-  background-image: url('./assets/img/footer-bg.png');
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 40%,
+    rgba(6, 6, 145, 1) 100%
+  );
 }
 .newsletter-bx {
   background: #ffffff;
@@ -600,7 +615,11 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 }
 .new-email-bx::before {
   content: '';
-  background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
+  background: radial-gradient(
+    circle,
+    rgba(6, 6, 145, 1) 13%,
+    rgba(23, 4, 8, 1) 68%
+  );
   border-radius: 20px;
   position: absolute;
   z-index: -1;
@@ -629,7 +648,11 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   padding: 0 15px;
 }
 .new-email-bx button {
-  background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
+  background: radial-gradient(
+    circle,
+    rgba(6, 6, 145, 1) 13%,
+    rgba(23, 4, 8, 1) 68%
+  );
   padding: 20px 65px;
   color: #fff;
   font-weight: 500;

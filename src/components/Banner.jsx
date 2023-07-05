@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
-import headerImg from '../assets/img/header-img.svg'
+import headerImg from '../logo.svg'
 import 'animate.css'
 
 export const Banner = () => {
@@ -9,7 +9,11 @@ export const Banner = () => {
   const [text, setText] = useState('')
   const [delta, setDelta] = useState(300 - Math.random() * 100)
   const [index, setIndex] = useState(1)
-  const toRotate = ['Web Developer', 'Web Designer', 'UI/UX Designer']
+  const toRotate = [
+    'Web Developer',
+    'Software Engineer',
+    'Full Stack Developer',
+  ]
   const period = 2000
 
   useEffect(() => {
@@ -52,25 +56,26 @@ export const Banner = () => {
   return (
     <section className="banner" id="home">
       <Container>
-        <Row className="aligh-items-center">
+        <Row className="aligh-items-center opacity-1">
           <Col xs={12} md={6} xl={7}>
             <div className="animate__animated animate__fadeIn">
-              <span className="tagline">Welcome to my Portfolio</span>
+              {/* <span className="tagline">Welcome to my Portfolio</span> */}
               <h1>
-                {`Hi! I'm Judy`}{' '}
+                {`Hi! I'm Andres Navarro`}{' '}
                 <span
                   className="txt-rotate"
                   dataPeriod="1000"
-                  data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'
+                  data-rotate='[ "Web Developer", "Software Engineer", "Full Stack Developer" ]'
                 >
                   <span className="wrap">{text}</span>
                 </span>
               </h1>
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book.
+                Software engineer with over 6 years of expertise, specializing
+                in frontend development. If you need assistance with any of
+                these technologies or if you're interested in working together
+                on an exciting project, feel free to reach out. I'd be delighted
+                to help you out!
               </p>
             </div>
           </Col>
