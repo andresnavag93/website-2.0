@@ -58,7 +58,7 @@ export const NavBar = () => {
       <Navbar
         key="md"
         expand="md"
-        className={scrolled ? 'scrolled p-3' : 'p-3'}
+        className={scrolled ? 'scrolled p-2' : 'p-2'}
       >
         <Container>
           <Navbar.Brand href="#">
