@@ -45,7 +45,7 @@ export const NavBar = () => {
         className={scrolled ? 'scrolled p-3' : 'p-3'}
       >
         <Container>
-          <Navbar.Brand href="/">
+          <Navbar.Brand href="#">
             <img src={logo} alt="Logo" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
@@ -66,7 +66,7 @@ export const NavBar = () => {
                   className={
                     activeLink === 'home' ? 'active navbar-link' : 'navbar-link'
                   }
-                  onClick={() => onUpdateActiveLink('home')}
+                  OnTouchStart={() => onUpdateActiveLink('home')}
                 >
                   Home
                 </Nav.Link>
@@ -77,7 +77,7 @@ export const NavBar = () => {
                       ? 'active navbar-link'
                       : 'navbar-link'
                   }
-                  onClick={() => onUpdateActiveLink('skills')}
+                  OnTouchStart={() => onUpdateActiveLink('skills')}
                 >
                   Skills
                 </Nav.Link>
@@ -88,7 +88,7 @@ export const NavBar = () => {
                       ? 'active navbar-link'
                       : 'navbar-link'
                   }
-                  onClick={() => onUpdateActiveLink('projects')}
+                  OnTouchStart={() => onUpdateActiveLink('projects')}
                 >
                   Projects
                 </Nav.Link>

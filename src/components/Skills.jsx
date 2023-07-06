@@ -132,15 +132,15 @@ export const Skills = () => {
                 </div>
                 <div className="item">
                   <img src={mongodb} alt="Image" />
-                  <h5>MongoDb</h5>
+                  <h5>MongoDB</h5>
                 </div>
                 <div className="item">
                   <img src={mysql} alt="Image" />
-                  <h5>MySql</h5>
+                  <h5>MySQL</h5>
                 </div>
                 <div className="item">
                   <img src={postgresql} alt="Image" />
-                  <h5>PostgreSql</h5>
+                  <h5>PostgreSQL</h5>
                 </div>
                 <div className="item">
                   <img src={postman} alt="Image" />
