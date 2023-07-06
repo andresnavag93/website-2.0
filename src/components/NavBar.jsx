@@ -19,6 +19,13 @@ export const NavBar = () => {
   const [activeLink, setActiveLink] = useState('home')
   const [scrolled, setScrolled] = useState(false)
 
+  const [menuOpen, setMenuOpen] = useState(false)
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen)
+  }
+
+  const handleClose = () => setMenuOpen(false)
+
   useEffect(() => {
     const onScroll = () => {
       if (window.scrollY > 50) {
@@ -35,6 +42,7 @@ export const NavBar = () => {
 
   const onUpdateActiveLink = (value) => {
     setActiveLink(value)
+    handleClose()
   }
 
   return (
@@ -48,14 +56,20 @@ export const NavBar = () => {
           <Navbar.Brand href="#">
             <img src={logo} alt="Logo" />
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav">
+          <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={toggleMenu}>
             <span className="navbar-toggler-icon"></span>
           </Navbar.Toggle>
-          <Navbar.Offcanvas id="basic-navbar-nav" placement="end">
+          <Navbar.Offcanvas
+            id="basic-navbar-nav"
+            placement="end"
+            restoreFocus={false}
+            show={menuOpen}
+            onHide={handleClose}
+          >
             <Offcanvas.Header closeButton className="custom-white">
               <Offcanvas.Title id="basic-navbar-nav"></Offcanvas.Title>
             </Offcanvas.Header>
-            <Offcanvas.Body aria-controls="basic-navbar-nav">
+            <Offcanvas.Body>
               <Nav className="justify-content-end align-items-center flex-grow-1 pe-3">
                 <Nav.Link
                   href="#home"

@@ -14,7 +14,7 @@ export const ProjectCard = ({ title, subtitle, features, imgUrl }) => {
           <br />
           {links.map((link, index) => {
             return (
-              <a href={link[1]} target="_blank">
+              <a key={index} href={link[1]} target="_blank">
                 <Button key={index} variant="primary" className="m-1">
                   {link[0]}
                 </Button>
