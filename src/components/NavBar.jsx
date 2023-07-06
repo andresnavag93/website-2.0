@@ -52,11 +52,7 @@ export const NavBar = () => {
             <span className="navbar-toggler-icon"></span>
           </Navbar.Toggle>
           <Navbar.Offcanvas id="basic-navbar-nav">
-            <Offcanvas.Header
-              expanded={true}
-              closeButton
-              className="custom-white"
-            >
+            <Offcanvas.Header closeButton className="custom-white">
               <Offcanvas.Title id="basic-navbar-nav"></Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
@@ -66,7 +62,7 @@ export const NavBar = () => {
                   className={
                     activeLink === 'home' ? 'active navbar-link' : 'navbar-link'
                   }
-                  OnTouchStart={() => onUpdateActiveLink('home')}
+                  onClick={() => onUpdateActiveLink('home')}
                 >
                   Home
                 </Nav.Link>
@@ -77,7 +73,7 @@ export const NavBar = () => {
                       ? 'active navbar-link'
                       : 'navbar-link'
                   }
-                  OnTouchStart={() => onUpdateActiveLink('skills')}
+                  onClick={() => onUpdateActiveLink('skills')}
                 >
                   Skills
                 </Nav.Link>
@@ -88,7 +84,7 @@ export const NavBar = () => {
                       ? 'active navbar-link'
                       : 'navbar-link'
                   }
-                  OnTouchStart={() => onUpdateActiveLink('projects')}
+                  onClick={() => onUpdateActiveLink('projects')}
                 >
                   Projects
                 </Nav.Link>

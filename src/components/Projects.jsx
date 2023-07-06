@@ -1,44 +1,15 @@
 import { Container, Row, Col, Tab, Nav } from 'react-bootstrap'
 import { ProjectCard } from './ProjectCard'
-import projImg1 from '../assets/img/project-img1.png'
-import projImg2 from '../assets/img/project-img2.png'
-import projImg3 from '../assets/img/project-img3.png'
+import { dataFullStack } from '../data/dataFullStack'
+import { dataVideoGames } from '../data/dataVideoGames'
+import { dataModels } from '../data/dataModels3d'
 import colorSharp2 from '../assets/img/color-sharp2.png'
 import 'animate.css'
 
 export const Projects = () => {
-  const projects = [
-    {
-      title: 'Business Startup',
-      description: 'Design & Development',
-      imgUrl: projImg1,
-    },
-    {
-      title: 'Business Startup',
-      description: 'Design & Development',
-      imgUrl: projImg2,
-    },
-    {
-      title: 'Business Startup',
-      description: 'Design & Development',
-      imgUrl: projImg3,
-    },
-    {
-      title: 'Business Startup',
-      description: 'Design & Development',
-      imgUrl: projImg1,
-    },
-    {
-      title: 'Business Startup',
-      description: 'Design & Development',
-      imgUrl: projImg2,
-    },
-    {
-      title: 'Business Startup',
-      description: 'Design & Development',
-      imgUrl: projImg3,
-    },
-  ]
+  const fullStackProjects = Object.values(dataFullStack)
+  const videoGamesProjects = Object.values(dataVideoGames)
+  const modelsProjects = Object.values(dataModels)
 
   return (
     <section className="project" id="projects">
@@ -60,13 +31,13 @@ export const Projects = () => {
                   id="pills-tab"
                 >
                   <Nav.Item>
-                    <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                    <Nav.Link eventKey="first">Web</Nav.Link>
                   </Nav.Item>
                   <Nav.Item>
-                    <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                    <Nav.Link eventKey="second">Games</Nav.Link>
                   </Nav.Item>
                   <Nav.Item>
-                    <Nav.Link eventKey="third">Tab 3</Nav.Link>
+                    <Nav.Link eventKey="third">Models</Nav.Link>
                   </Nav.Item>
                 </Nav>
                 <Tab.Content
@@ -75,21 +46,21 @@ export const Projects = () => {
                 >
                   <Tab.Pane eventKey="first">
                     <Row>
-                      {projects.map((project, index) => {
+                      {fullStackProjects.map((project, index) => {
                         return <ProjectCard key={index} {...project} />
                       })}
                     </Row>
                   </Tab.Pane>
                   <Tab.Pane eventKey="second">
                     <Row>
-                      {projects.map((project, index) => {
+                      {videoGamesProjects.map((project, index) => {
                         return <ProjectCard key={index} {...project} />
                       })}
                     </Row>
                   </Tab.Pane>
                   <Tab.Pane eventKey="third">
                     <Row>
-                      {projects.map((project, index) => {
+                      {modelsProjects.map((project, index) => {
                         return <ProjectCard key={index} {...project} />
                       })}
                     </Row>

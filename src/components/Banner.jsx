@@ -10,9 +10,9 @@ export const Banner = () => {
   const [delta, setDelta] = useState(300 - Math.random() * 100)
   const [index, setIndex] = useState(1)
   const toRotate = [
-    'Web Developer',
+    'Frontend Developer',
     'Software Engineer',
-    'Full Stack Developer',
+    'Computer Engineer',
   ]
   const period = 2000
 
@@ -64,8 +64,7 @@ export const Banner = () => {
                 {`Hi! I'm Andres Navarro`}{' '}
                 <span
                   className="txt-rotate"
-                  dataPeriod="1000"
-                  data-rotate='[ "Web Developer", "Software Engineer", "Full Stack Developer" ]'
+                  data-rotate='[ "Frontend Developer", "Software Engineer", "Computer Engineer" ]'
                 >
                   <span className="wrap">{text}</span>
                 </span>
