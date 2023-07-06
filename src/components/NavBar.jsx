@@ -1,13 +1,5 @@
 import { useState, useEffect } from 'react'
-import {
-  Navbar,
-  Nav,
-  Container,
-  Offcanvas,
-  NavDropdown,
-  Form,
-  Button,
-} from 'react-bootstrap'
+import { Navbar, Nav, Container, Offcanvas } from 'react-bootstrap'
 import logo from '../assets/img/logo-2.svg'
 import navIcon1 from '../assets/img/nav-icon1.svg'
 import navIcon2 from '../assets/img/github.svg'
@@ -18,13 +10,16 @@ import { BrowserRouter as Router } from 'react-router-dom'
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState('home')
   const [scrolled, setScrolled] = useState(false)
+  const [value, setValue] = useState('home')
 
   const [menuOpen, setMenuOpen] = useState(false)
   const toggleMenu = () => {
     setMenuOpen(!menuOpen)
   }
 
-  const handleClose = () => setMenuOpen(false)
+  const handleClose = () => {
+    setMenuOpen(false)
+  }
 
   useEffect(() => {
     const onScroll = () => {
@@ -44,6 +39,19 @@ export const NavBar = () => {
     setActiveLink(value)
     handleClose()
   }
+
+  useEffect(() => {
+    if (!menuOpen) {
+      setValue(activeLink)
+    }
+  }, [menuOpen])
+
+  useEffect(() => {
+    const element = document.getElementById(activeLink)
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' })
+    }
+  }, [value])
 
   return (
     <Router>
