@@ -71,7 +71,7 @@ export const Skills = () => {
                 </div>
                 <div className="item">
                   <img src={javascript} alt="Image" />
-                  <h5>Javascript</h5>
+                  <h5>JavaScript</h5>
                 </div>
                 <div className="item">
                   <img src={typescript} alt="Image" />

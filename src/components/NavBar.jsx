@@ -51,11 +51,11 @@ export const NavBar = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>
           </Navbar.Toggle>
-          <Navbar.Offcanvas id="basic-navbar-nav">
+          <Navbar.Offcanvas id="basic-navbar-nav" placement="end">
             <Offcanvas.Header closeButton className="custom-white">
               <Offcanvas.Title id="basic-navbar-nav"></Offcanvas.Title>
             </Offcanvas.Header>
-            <Offcanvas.Body>
+            <Offcanvas.Body aria-controls="basic-navbar-nav">
               <Nav className="justify-content-end align-items-center flex-grow-1 pe-3">
                 <Nav.Link
                   href="#home"
