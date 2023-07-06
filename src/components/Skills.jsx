@@ -1,6 +1,23 @@
-import meter1 from '../assets/img/meter1.svg'
-import meter2 from '../assets/img/meter2.svg'
-import meter3 from '../assets/img/meter3.svg'
+import react from '../assets/img/skills/react.svg'
+import javascript from '../assets/img/skills/javascript.svg'
+import typescript from '../assets/img/skills/typescript.svg'
+import nextjs from '../assets/img/skills/nextjs.svg'
+import css from '../assets/img/skills/css.svg'
+import html from '../assets/img/skills/html.svg'
+import redux from '../assets/img/skills/redux.svg'
+import tailwind from '../assets/img/skills/tailwind.svg'
+import bootstrap from '../assets/img/skills/bootstrap.svg'
+
+import python from '../assets/img/skills/python.svg'
+import git from '../assets/img/skills/git.svg'
+import nodejs from '../assets/img/skills/nodejs.svg'
+import aws from '../assets/img/skills/aws.svg'
+import unity from '../assets/img/skills/unity.svg'
+import mongodb from '../assets/img/skills/mongodb.svg'
+import mysql from '../assets/img/skills/mysql.svg'
+import postgresql from '../assets/img/skills/postgresql.svg'
+import postman from '../assets/img/skills/postman.svg'
+
 import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
 import colorSharp from '../assets/img/color-sharp.png'
@@ -42,26 +59,92 @@ export const Skills = () => {
               </p>
               <Carousel
                 responsive={responsive}
+                removeArrowOnDeviceType={['tablet', 'mobile']}
                 infinite={true}
                 autoPlay={true}
-                autoPlaySpeed={1000}
+                autoPlaySpeed={2000}
                 className="owl-carousel owl-theme skill-slider"
               >
-                <div className="item">
-                  <img src={meter1} alt="Image" />
-                  <h5>Web Development</h5>
+                <div className="item ">
+                  <img src={react} alt="Image" className="item-80-width" />
+                  <h5>React</h5>
                 </div>
                 <div className="item">
-                  <img src={meter2} alt="Image" />
-                  <h5>Brand Identity</h5>
+                  <img src={javascript} alt="Image" />
+                  <h5>Javascript</h5>
                 </div>
                 <div className="item">
-                  <img src={meter3} alt="Image" />
-                  <h5>Logo Design</h5>
+                  <img src={typescript} alt="Image" />
+                  <h5>TypeScript</h5>
                 </div>
                 <div className="item">
-                  <img src={meter1} alt="Image" />
-                  <h5>Web Development</h5>
+                  <img src={html} alt="Image" />
+                  <h5>HTML</h5>
+                </div>
+                <div className="item">
+                  <img src={css} alt="Image" />
+                  <h5>CSS</h5>
+                </div>
+                <div className="item">
+                  <img src={nextjs} alt="Image" />
+                  <h5>NextJs</h5>
+                </div>
+                <div className="item">
+                  <img src={redux} alt="Image" />
+                  <h5>Redux</h5>
+                </div>
+                <div className="item">
+                  <img src={tailwind} alt="Image" className="item-80-width" />
+                  <h5>Tailwind</h5>
+                </div>
+                <div className="item">
+                  <img src={bootstrap} alt="Image" />
+                  <h5>Bootstrap</h5>
+                </div>
+              </Carousel>
+              <Carousel
+                responsive={responsive}
+                removeArrowOnDeviceType={['tablet', 'mobile']}
+                infinite={true}
+                autoPlay={true}
+                autoPlaySpeed={2000}
+                className="owl-carousel owl-theme skill-slider mt-5"
+              >
+                <div className="item">
+                  <img src={nodejs} alt="Image" />
+                  <h5>NodeJs</h5>
+                </div>
+                <div className="item">
+                  <img src={python} alt="Image" />
+                  <h5>Python</h5>
+                </div>
+                <div className="item">
+                  <img src={git} alt="Image" />
+                  <h5>Git</h5>
+                </div>
+                <div className="item">
+                  <img src={aws} alt="Image" className="item-80-width" />
+                  <h5>Aws</h5>
+                </div>
+                <div className="item">
+                  <img src={unity} alt="Image" />
+                  <h5>Unity</h5>
+                </div>
+                <div className="item">
+                  <img src={mongodb} alt="Image" />
+                  <h5>MongoDb</h5>
+                </div>
+                <div className="item">
+                  <img src={mysql} alt="Image" />
+                  <h5>MySql</h5>
+                </div>
+                <div className="item">
+                  <img src={postgresql} alt="Image" />
+                  <h5>PostgreSql</h5>
+                </div>
+                <div className="item">
+                  <img src={postman} alt="Image" />
+                  <h5>Postman</h5>
                 </div>
               </Carousel>
             </div>

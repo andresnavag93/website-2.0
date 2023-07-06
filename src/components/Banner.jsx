@@ -71,11 +71,15 @@ export const Banner = () => {
                 </span>
               </h1>
               <p>
-                Software engineer with over 6 years of expertise, specializing
-                in frontend development. If you need assistance in modern
-                technologies or if you're interested in working together on an
-                exciting project, feel free to reach out. I'd be delighted to
-                help you out!
+                Software Engineer with 6+ years of expertise. Proficient in
+                cutting-edge technologies such as React, JavaScript, HTML, CSS,
+                Typescript, and Node. Collaborated on multiple software
+                projects, with experience in the entire software development
+                life cycle, from conception to deployment, with a keen focus on
+                optimization, testing, code maintainability, and clean code. If
+                you need assistance in modern technologies or if you're
+                interested in working together on an exciting project, feel free
+                to reach out. I'd be delighted to help you out!
               </p>
             </div>
           </Col>
